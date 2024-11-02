@@ -51,8 +51,8 @@ const SideBar = () => {
     dispatch(setCharacters(response.data.results));
   };
   return (
-    <div className="sidebar h-[100vh] top-12  py-2 px-4 w-[250px] fixed overflow-y-scroll    ">
-      <h2 className="font-semibold text-xl px-2 py-2 border-b border-black">
+    <div className="sidebar  h-[100vh] top-12  py-2 px-2 sm:px-4 w-[150px] sm:w-[250px] fixed overflow-y-scroll    ">
+      <h2 className="sm:font-semibold font-medium sm:text-xl text-lg px-2 py-2 border-b border-black">
         Episodes
       </h2>
       <EpisodeList

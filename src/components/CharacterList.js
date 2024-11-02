@@ -60,8 +60,8 @@ const CharacterList = () => {
     }
   };
   return (
-    <div className="pl-[265px] pt-12">
-      <h1 className="font-semibold text-xl pl-2 pt-2">
+    <div className="sm:ml-[265px] ml-[155px] pt-12">
+      <h1 className="sm:font-semibold font-medium sm:text-xl pl-2 pt-2">
         <i>{characters.length}</i> characters found in <i>{episodeName}</i>
       </h1>
       <div className="character-list  py-2 flex  flex-wrap">
@@ -75,20 +75,20 @@ const CharacterList = () => {
               src={character.image}
               alt={character.name}
             />
-            <h3 className="font-medium text-lg">{character.name}</h3>
+            <h3 className="sm:font-medium sm:text-lg">{character.name}</h3>
           </div>
         ))}
       </div>
       {!showingEpisodeCharacters && (
         <div className="flex">
           <button
-            className="border flex justify-center items-center border-black p-3  m-2 rounded-full "
+            className="border flex justify-center items-center border-black sm:p-[10px] p-1 m-1  sm:m-2 rounded-full "
             onClick={handlePrevCharacterPage}
           >
             <FaArrowLeft size={"22px"} />
           </button>
           <button
-            className="border flex justify-center items-center border-black p-[10px]  m-2 rounded-full"
+            className="border flex justify-center items-center border-black sm:p-[10px] p-1 m-1  sm:m-2 rounded-full"
             onClick={handleNextCharacterPage}
           >
             <FaArrowRight size={"24px"} />
