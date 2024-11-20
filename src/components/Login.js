@@ -24,6 +24,7 @@ const Login = () => {
   return (
     <div className="mt-12 max-w-sm mx-auto border-2 flex justify-center items-center flex-col">
       <h1 className="text-2xl p-2 ">Login</h1>
+      <p>Name is ankit, and password is ankit@428</p>
 
       <div className="flex justify-around w-full m-2">
         <label>Name :</label>
@@ -33,7 +34,7 @@ const Login = () => {
           onChange={handlenameChange}
         />
       </div>
-      <div className="flex border  w-full justify-around">
+      <div className="flex   w-full justify-around">
         <label>Password : </label>
         <input
           type="text"
